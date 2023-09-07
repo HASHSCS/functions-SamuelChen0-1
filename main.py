@@ -95,7 +95,7 @@ def is_palindrome(s):
     """
     #pass  # Implement your solution here
     reversed = s[::-1]
-    if reversed=s:
+    if reversed==s:
         return("True")
     else:
         return("False")
