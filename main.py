@@ -5,6 +5,8 @@ def square(number):
     :return: int or float, the square of the input number
     """
     pass  # Implement your solution here
+    s = number*number
+    return s
 
 
 def reverse_string(s):
@@ -14,6 +16,9 @@ def reverse_string(s):
     :return: str, the reversed string
     """
     pass  # Implement your solution here
+    reversed = s[::-1]
+    return reversed
+
 
 
 def is_prime(n):
@@ -23,6 +28,21 @@ def is_prime(n):
     :return: bool, True if the number is prime, otherwise False
     """
     pass  # Implement your solution here
+            if n <= 1:
+        return False
+    elif n <= 3:
+        return True
+    elif n % 2 == 0 or n % 3 == 0:
+        return False
+
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+
+    return True
+
 
 
 def factorial(n):
@@ -32,6 +52,11 @@ def factorial(n):
     :return: int, the factorial of the input number
     """
     pass  # Implement your solution here
+  r=1
+  for i in range(1,n+1):
+    r=r*i
+  return(r)
+
 
 def find_maximum(lst):
     """
@@ -40,6 +65,13 @@ def find_maximum(lst):
     :return: int, the maximum number in the list
     """
     pass  # Implement your solution here
+    if not lst:
+       return None
+    else:
+        return max(lst)
+
+    
+
 
 def odd_or_even(n):
     """
@@ -48,6 +80,10 @@ def odd_or_even(n):
     :return: str, "Odd" or "Even"
     """
     pass  # Implement your solution here
+    if n/2-n//2=0:
+        return("Even")
+    else:
+        return("Odd")
 
 def is_palindrome(s):
     """
@@ -58,6 +94,13 @@ def is_palindrome(s):
     :return: bool, `True` if the string is a palindrome, `False` otherwise.
     """
     pass  # Implement your solution here
+    reversed = s[::-1]
+    if reversed=s:
+        return("True")
+    else:
+        return("False")
+
+
 
 def find_gcd(a, b):
     """
@@ -68,4 +111,8 @@ def find_gcd(a, b):
     :return: int, the greatest common divisor of `a` and `b`.
     """
     pass  # Implement your solution here
+    while b:
+        a, b = b, a % b
+    return a
 
+    
