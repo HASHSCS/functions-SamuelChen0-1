@@ -94,11 +94,13 @@ def is_palindrome(s):
     :return: bool, `True` if the string is a palindrome, `False` otherwise.
     """
     #pass  # Implement your solution here
-    reversed = s[::-1]
-    if reversed==s:
-        return("True")
+    s = s.replace(" ", "").lower()
+    if s == s[::-1]:
+        return True
     else:
-        return("False")
+        return False
+
+
 
 
 
