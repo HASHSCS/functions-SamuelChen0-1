@@ -4,7 +4,7 @@ def square(number):
     :param number: int or float
     :return: int or float, the square of the input number
     """
-    pass  # Implement your solution here
+    #pass  # Implement your solution here
     s = number*number
     return s
 
@@ -15,7 +15,7 @@ def reverse_string(s):
     :param s: str
     :return: str, the reversed string
     """
-    pass  # Implement your solution here
+    #pass  # Implement your solution here
     reversed = s[::-1]
     return reversed
 
@@ -27,8 +27,8 @@ def is_prime(n):
     :param n: int
     :return: bool, True if the number is prime, otherwise False
     """
-    pass  # Implement your solution here
-            if n <= 1:
+    #pass  # Implement your solution here
+    if n <= 1:
         return False
     elif n <= 3:
         return True
@@ -51,11 +51,11 @@ def factorial(n):
     :param n: int
     :return: int, the factorial of the input number
     """
-    pass  # Implement your solution here
-  r=1
-  for i in range(1,n+1):
-    r=r*i
-  return(r)
+    #pass  # Implement your solution here
+    r=1
+    for i in range(1,n+1):
+        r=r*i
+    return(r)
 
 
 def find_maximum(lst):
@@ -64,7 +64,7 @@ def find_maximum(lst):
     :param lst: list of int
     :return: int, the maximum number in the list
     """
-    pass  # Implement your solution here
+    #pass  # Implement your solution here
     if not lst:
        return None
     else:
@@ -79,8 +79,8 @@ def odd_or_even(n):
     :param n: int
     :return: str, "Odd" or "Even"
     """
-    pass  # Implement your solution here
-    if n/2-n//2=0:
+    #pass  # Implement your solution here
+    if n/2-n//2==0:
         return("Even")
     else:
         return("Odd")
@@ -93,7 +93,7 @@ def is_palindrome(s):
     :param s: str
     :return: bool, `True` if the string is a palindrome, `False` otherwise.
     """
-    pass  # Implement your solution here
+    #pass  # Implement your solution here
     reversed = s[::-1]
     if reversed=s:
         return("True")
@@ -110,7 +110,7 @@ def find_gcd(a, b):
     :param b: int
     :return: int, the greatest common divisor of `a` and `b`.
     """
-    pass  # Implement your solution here
+    #pass  # Implement your solution here
     while b:
         a, b = b, a % b
     return a
